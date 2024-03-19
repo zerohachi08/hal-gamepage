@@ -4,25 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script>
-    let path = './sheet1.csv';
-      (function(){
-        new Promise((resolve, reject) => {
-          fs.readFile(path, (err, data) => {
-            if (err) {
-              reject(err);
-            } else {
-              resolve(data);
-              return data;
-            }
-          });
-        }).then((data) => {
-          console.log(data);
-        });
-      });
-  </script>
+  <script src="script.js"></script>
 </head>
 <body>
-    
+  <div id="include"></div>
 </body>
 </html>
