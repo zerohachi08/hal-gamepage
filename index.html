@@ -10,14 +10,13 @@
         new Promise((resolve, reject) => {
           fs.readFile(path, (err, data) => {
             if (err) {
-              reject(err); // 失敗: 内部状態をrejectedにする
+              reject(err);
             } else {
-              resolve(data); // 成功: 内部状態をfulfilledにする
+              resolve(data);
               return data;
             }
           });
         }).then((data) => {
-          // 処理が無事終わったことを受けとって実行される処理
           console.log(data);
         });
       });
