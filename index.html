@@ -6,13 +6,29 @@
   <title>Document</title>
   <script src="script.js"></script>
   <style>
-    .student {
+    body {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    #include {
       display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .student {
+      display: block;
       border: 1px solid #ccc;
       padding: 10px;
       background-color: burlywood;
-      gap: 20px;
       margin-top: 10px;
+      width: 25%;
+    }
+
+    .student p {
+      display: block;
     }
   </style>
 </head>
