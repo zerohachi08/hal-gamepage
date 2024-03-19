@@ -1,5 +1,8 @@
-let path = './sheet1.csv';
+let path = 'sheet1.csv';
 const promise = () => new Promise((resolve, reject) => {
+  fs.readFile(path, 'utf-8', (err, data) => {
+    resolve(data)
+  })
   reject();
 })
 .then(() => {
