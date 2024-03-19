@@ -1,5 +1,5 @@
 let path = './sheet1.csv';
-const promise = new Promise((resolve, reject) => {
+const promise = () => new Promise((resolve, reject) => {
   reject();
 })
 .then(() => {
