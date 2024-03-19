@@ -4,7 +4,7 @@ const promise = () => new Promise((resolve, reject) => {
     resolve(data);
   });
 })
-.then(() => {
+.then((data) => {
   console.log(data);
   console.log("resolveしたよ");
 })
