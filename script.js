@@ -1,3 +1,4 @@
+// csvをjsonに書き換える関数
 function csv2json(csvArray){
   let jsonArray = [];
 
@@ -14,6 +15,7 @@ function csv2json(csvArray){
   return jsonArray;
 }
 
+// csv
 let path = './sheet1.csv';
 const promise = () => fetch("sheet1.csv")
 .then(function(response){
