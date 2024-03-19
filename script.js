@@ -9,6 +9,7 @@ const promise = () => new Promise((resolve, reject) => {
   console.log("resolveしたよ");
 })
 .catch((err) => {
+  console.log(err);
   console.log("rejectしたよ");
 });
 
